@@ -20,7 +20,7 @@ from PIL import Image
 import os
 
 
-location = '3109642'i #Ames, GAliza
+location = '3109642' #Ames, GAliza
 api_key = ''
 units = 'metric' # kelvin, metric, imperial
 lang = 'en'
