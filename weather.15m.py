@@ -7,7 +7,6 @@
 # <bitbar.author.github>seripap</bitbar.author.github>
 # <bitbar.desc>Grabs simple weather information from openweathermap. Needs configuration for location and API key.</bitbar.desc>
 # <bitbar.dependencies>python</bitbar.dependencies>
-# <bitbar.img>https://github.com/alexandregz/bitbar-plugins-alexandregz/blob/master/weather-bitbar-with-img.png</bitbar.img>
 
 # Alexandre Espinosa Menor: added icon (resized to 30x30 px)
 # It needs import Image, os and base64 to work
@@ -21,7 +20,7 @@ from PIL import Image
 import os
 
 
-location = '3109642' # Ames, Galiza
+location = '3109642'i #Ames, GAliza
 api_key = ''
 units = 'metric' # kelvin, metric, imperial
 lang = 'en'
@@ -109,7 +108,8 @@ def save_icon_and_get_encoded(icon):
   with open(imgTmpResized, "rb") as image_file:
     encoded_string = base64.b64encode(image_file.read())
 
-  os.remove(imgTmp)
+  if os.path.isfile(imgTmp):
+    os.remove(imgTmp)
 
   return encoded_string
 
