@@ -48,7 +48,7 @@ if( $fp = fopen( $urlApi, 'r', false, $streamContext ) )
     foreach($response['data'] as $s) {
 	$out .= $s['family'].": ".$s['service']." (".$s['startDate']." - ".$s['endDate'].")\n";
     }
-    echo "dinahosting | image=".$logo_dinahosting."\n";
+    echo " | image=".$logo_dinahosting."\n";
     echo "---\n";
     echo "$out\n";
 }
