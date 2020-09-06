@@ -23,7 +23,7 @@ import os
 location = '3109642' #Ames, GAliza
 api_key = ''
 units = 'metric' # kelvin, metric, imperial
-lang = 'en'
+lang = 'gl'
 
 def get_wx():
 
